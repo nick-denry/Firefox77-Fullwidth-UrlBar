@@ -12,16 +12,20 @@
   width: 100% !important;
   padding: 0px !important;
 }
+
 #urlbar[breakout][breakout-extend] > #urlbar-input-container {
   height: var(--urlbar-height) !important;
   padding: 0 !important;
 }
+
 #urlbar[breakout][breakout-extend] > #urlbar-background {
   animation: none !important;;
 }
+
 #urlbar[breakout][breakout-extend] > #urlbar-background {
   box-shadow: none !important;
 }
+
 #urlbar-results {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
