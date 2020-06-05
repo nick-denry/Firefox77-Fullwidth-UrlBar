@@ -38,18 +38,18 @@
   --base-urlbar-padding: 134px;
   /* An optional one */
   /* Set this if #nav-bar toolbarspring is not disabled */
-  /* --base-urlbar-padding: 192px; */
+  /* --base-urlbar-padding: 200px; */
 }
 
 .urlbarView {
-	position: fixed!important;
-	z-index: 3;
-	left: -6px;
+  position: fixed!important;
+  z-index: 3;
+  left: -6px;
   top: 73px;
-	background: var(--autocomplete-popup-background);
-	color: var(--autocomplete-popup-color);
-	border-block: 1px solid var(--chrome-content-separator-color);
-	box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
+  background: var(--autocomplete-popup-background);
+  color: var(--autocomplete-popup-color);
+  border-block: 1px solid var(--chrome-content-separator-color);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
   width: calc(100% - 1px)!important;
 }
 
