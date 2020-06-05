@@ -1,11 +1,10 @@
 /**
-* Disables Firefox 77 megabar and set full width for the UrlBar dropdown.
+* Full width dropdown UrlBar for Firefox 77.
 */
 
 /**
 * Disable megabar.
 */
-
 #urlbar[breakout][breakout-extend] {
   top: 5px !important;
   left: 0px !important;
@@ -13,17 +12,16 @@
   padding: 0px !important;
 }
 
-#urlbar[breakout][breakout-extend]>#urlbar-input-container {
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
   height: var(--urlbar-height) !important;
   padding: 0 !important;
 }
 
-#urlbar[breakout][breakout-extend]>#urlbar-background {
+#urlbar[breakout][breakout-extend] > #urlbar-background {
   animation: none !important;
-  ;
 }
 
-#urlbar[breakout][breakout-extend]>#urlbar-background {
+#urlbar[breakout][breakout-extend] > #urlbar-background {
   box-shadow: none !important;
 }
 
@@ -33,24 +31,25 @@
 }
 
 /**
-* Urlbar width set to 100%.
+* Set dropdown width to 100%.
 */
 
 :root {
-  --base-urlbar-padding: 140px;
-  /* Set to your left-bar padding */
+  --base-urlbar-padding: 134px;
+  /* An optional one */
+  /* Set this if #nav-bar toolbarspring is not disabled */
+  /* --base-urlbar-padding: 192px; */
 }
 
 .urlbarView {
-  position: fixed!important;
-  z-index: 3;
-  left: -6px;
-  /* right: 0; */
+	position: fixed!important;
+	z-index: 3;
+	left: -6px;
   top: 73px;
-  background: var(--autocomplete-popup-background);
-  color: var(--autocomplete-popup-color);
-  border-block: 1px solid var(--chrome-content-separator-color);
-  box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
+	background: var(--autocomplete-popup-background);
+	color: var(--autocomplete-popup-color);
+	border-block: 1px solid var(--chrome-content-separator-color);
+	box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
   width: calc(100% - 1px)!important;
 }
 
@@ -69,9 +68,8 @@
 }
 
 /**
-* Optional - disable left and right whitespace.
+* Optionally disables toolbar left and right whitespace gaps.
 */
-
 #nav-bar toolbarspring {
-  -moz-box-flex: 0px;
+  display: none;
 }
