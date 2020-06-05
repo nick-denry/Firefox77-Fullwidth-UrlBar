@@ -1,0 +1,71 @@
+/**
+* Disables Firefox 77 megabar and set full width for the UrlBar dropdown.
+*/
+
+/**
+* Disable megabar.
+*/
+
+#urlbar[breakout][breakout-extend] {
+  top: 5px !important;
+  left: 0px !important;
+  width: 100% !important;
+  padding: 0px !important;
+}
+#urlbar[breakout][breakout-extend] > #urlbar-input-container {
+  height: var(--urlbar-height) !important;
+  padding: 0 !important;
+}
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  animation: none !important;;
+}
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  box-shadow: none !important;
+}
+#urlbar-results {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/**
+* Urlbar width set to 100%.
+*/
+
+:root {
+  --base-urlbar-padding: 140px; /* Set to your left-bar padding */
+}
+
+.urlbarView {
+	position: fixed!important;
+	z-index: 3;
+	left: -6px;
+	/* right: 0; */
+  top: 73px;
+	background: var(--autocomplete-popup-background);
+	color: var(--autocomplete-popup-color);
+	border-block: 1px solid var(--chrome-content-separator-color);
+	box-shadow: 0 5px 18px rgba(0, 0, 0, .2);
+  width: calc(100% - 1px)!important;
+}
+
+.urlbarView-body-inner {
+  border-top: 0px !important;
+}
+
+.urlbarView-row-inner {
+  padding-left: calc(var(--base-urlbar-padding) + 8px)!important;
+  padding-right: calc(var(--base-urlbar-padding) + 8px)!important;
+}
+
+.search-one-offs {
+  padding-left: var(--base-urlbar-padding)!important;
+  padding-right: var(--base-urlbar-padding)!important;
+}
+
+/**
+* Optional - disable left and right whitespace.
+*/
+
+#nav-bar toolbarspring {
+  -moz-box-flex: 0px;
+}
